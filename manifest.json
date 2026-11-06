@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "video-grab",
+  "version": "0.1.0",
+  "description": "Lists the videos a tab loads and copies their URLs for yt-dlp.",
+  "permissions": ["webRequest", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "dist/background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "video-grab",
+    "default_popup": "popup.html"
+  }
+}

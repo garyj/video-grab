@@ -1,0 +1,606 @@
+{
+  "hlsPlaylist": {
+    "response": {
+      "documentId": "51E24212D3540EDB13DD11AD2D0E95B8",
+      "documentLifecycle": "active",
+      "frameId": 0,
+      "frameType": "outermost_frame",
+      "fromCache": false,
+      "initiator": "https://files.jarrel.io",
+      "ip": "104.21.85.38",
+      "method": "GET",
+      "parentFrameId": -1,
+      "requestId": "10",
+      "responseHeaders": [
+        {
+          "name": "date",
+          "value": "Fri, 06 Nov 2026 01:26:16 GMT"
+        },
+        {
+          "name": "content-type",
+          "value": "application/octet-stream"
+        },
+        {
+          "name": "content-length",
+          "value": "461"
+        },
+        {
+          "name": "accept-ranges",
+          "value": "bytes"
+        },
+        {
+          "name": "cache-control",
+          "value": "no-cache"
+        },
+        {
+          "name": "content-disposition",
+          "value": "attachment; filename=\"stream.m3u8\""
+        },
+        {
+          "name": "etag",
+          "value": "\"57eb15c13de4fc5e8944cf76c50377b6\""
+        },
+        {
+          "name": "last-modified",
+          "value": "Fri, 06 Nov 2026 01:18:53 GMT"
+        },
+        {
+          "name": "referrer-policy",
+          "value": "no-referrer"
+        },
+        {
+          "name": "x-content-type-options",
+          "value": "nosniff"
+        },
+        {
+          "name": "x-robots-tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "name": "report-to",
+          "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=rL2RjYKJl1wZL2pM4kyhtLgOmxEy99zb9aOHF5LHDAMLywYKe6ByURMGWf27VN8u9UFUTG0JXuISXAswf6CNrE5sB2xilPE2gX4Xm7ZmCzcha4U0ZsJ1xJuKejRgj2PI%2BzE%3D\"}]}"
+        },
+        {
+          "name": "nel",
+          "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+        },
+        {
+          "name": "server",
+          "value": "cloudflare"
+        },
+        {
+          "name": "cf-ray",
+          "value": "a5604f1d99412665-MEL"
+        },
+        {
+          "name": "alt-svc",
+          "value": "h3=\":443\"; ma=86400"
+        }
+      ],
+      "statusCode": 200,
+      "statusLine": "HTTP/1.1 200",
+      "tabId": 1786714585,
+      "timeStamp": 1793928376006.55,
+      "type": "xmlhttprequest",
+      "url": "https://files.jarrel.io/a329c66d-d95d-4178-aef9-a61df817a9d8/stream.m3u8"
+    },
+    "requestHeaders": [
+      {
+        "name": "sec-ch-ua-platform",
+        "value": "\"Linux\""
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+      },
+      {
+        "name": "sec-ch-ua",
+        "value": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\""
+      },
+      {
+        "name": "sec-ch-ua-mobile",
+        "value": "?0"
+      },
+      {
+        "name": "Accept",
+        "value": "*/*"
+      },
+      {
+        "name": "Sec-Fetch-Site",
+        "value": "same-origin"
+      },
+      {
+        "name": "Sec-Fetch-Mode",
+        "value": "cors"
+      },
+      {
+        "name": "Sec-Fetch-Dest",
+        "value": "empty"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "gzip, deflate, br, zstd"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "en-GB,en-US;q=0.9,en;q=0.8"
+      }
+    ]
+  },
+  "hlsSegment": {
+    "response": {
+      "documentId": "51E24212D3540EDB13DD11AD2D0E95B8",
+      "documentLifecycle": "active",
+      "frameId": 0,
+      "frameType": "outermost_frame",
+      "fromCache": false,
+      "initiator": "https://files.jarrel.io",
+      "ip": "104.21.85.38",
+      "method": "GET",
+      "parentFrameId": -1,
+      "requestId": "13",
+      "responseHeaders": [
+        {
+          "name": "date",
+          "value": "Fri, 06 Nov 2026 01:26:16 GMT"
+        },
+        {
+          "name": "server-timing",
+          "value": "cfExtPri"
+        },
+        {
+          "name": "content-type",
+          "value": "application/octet-stream"
+        },
+        {
+          "name": "server",
+          "value": "cloudflare"
+        },
+        {
+          "name": "accept-ranges",
+          "value": "bytes"
+        },
+        {
+          "name": "cache-control",
+          "value": "no-cache"
+        },
+        {
+          "name": "content-disposition",
+          "value": "attachment; filename=\"seg0.ts\""
+        },
+        {
+          "name": "etag",
+          "value": "\"f0f61aff7225a88b8b57076f85865bb9\""
+        },
+        {
+          "name": "last-modified",
+          "value": "Fri, 06 Nov 2026 01:18:51 GMT"
+        },
+        {
+          "name": "referrer-policy",
+          "value": "no-referrer"
+        },
+        {
+          "name": "x-content-type-options",
+          "value": "nosniff"
+        },
+        {
+          "name": "x-robots-tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "name": "report-to",
+          "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=R4PKelLN360mXZ6tXnPtGE2j8e02Z9Msz2aGBcVl%2BC%2By%2FQLnhfbs3auMMiD6pgyU7h%2B2Gsr2uDj9pk6cELJxFZc6Jh2YqRyRy0nDVMaazl7EjZ1oEPaKxYqc8UKoXznl1lQ%3D\"}]}"
+        },
+        {
+          "name": "nel",
+          "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+        },
+        {
+          "name": "priority",
+          "value": "u=1,i"
+        },
+        {
+          "name": "cf-ray",
+          "value": "a5604f1e888a2b34-MEL"
+        },
+        {
+          "name": "alt-svc",
+          "value": "h3=\":443\"; ma=86400"
+        },
+        {
+          "name": "content-length",
+          "value": "350244"
+        }
+      ],
+      "statusCode": 200,
+      "statusLine": "HTTP/1.1 200",
+      "tabId": 1786714585,
+      "timeStamp": 1793928376182.471,
+      "type": "xmlhttprequest",
+      "url": "https://files.jarrel.io/c5dbdee4-3cd5-481f-b14b-8886d204630e/seg0.ts"
+    },
+    "requestHeaders": [
+      {
+        "name": "sec-ch-ua-platform",
+        "value": "\"Linux\""
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+      },
+      {
+        "name": "sec-ch-ua",
+        "value": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\""
+      },
+      {
+        "name": "sec-ch-ua-mobile",
+        "value": "?0"
+      },
+      {
+        "name": "Accept",
+        "value": "*/*"
+      },
+      {
+        "name": "Sec-Fetch-Site",
+        "value": "same-origin"
+      },
+      {
+        "name": "Sec-Fetch-Mode",
+        "value": "cors"
+      },
+      {
+        "name": "Sec-Fetch-Dest",
+        "value": "empty"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "gzip, deflate, br, zstd"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "en-GB,en-US;q=0.9,en;q=0.8"
+      }
+    ]
+  },
+  "largeMp4": {
+    "response": {
+      "documentId": "51E24212D3540EDB13DD11AD2D0E95B8",
+      "documentLifecycle": "active",
+      "frameId": 0,
+      "frameType": "outermost_frame",
+      "fromCache": false,
+      "initiator": "https://files.jarrel.io",
+      "ip": "104.21.85.38",
+      "method": "GET",
+      "parentFrameId": -1,
+      "requestId": "11",
+      "responseHeaders": [
+        {
+          "name": "date",
+          "value": "Fri, 06 Nov 2026 01:26:16 GMT"
+        },
+        {
+          "name": "content-type",
+          "value": "video/mp4"
+        },
+        {
+          "name": "accept-ranges",
+          "value": "bytes"
+        },
+        {
+          "name": "cache-control",
+          "value": "no-cache"
+        },
+        {
+          "name": "content-disposition",
+          "value": "inline; filename=\"big-test.mp4\""
+        },
+        {
+          "name": "etag",
+          "value": "\"19ccafe55c9c143541ea3199807866f0\""
+        },
+        {
+          "name": "last-modified",
+          "value": "Fri, 06 Nov 2026 01:18:53 GMT"
+        },
+        {
+          "name": "referrer-policy",
+          "value": "no-referrer"
+        },
+        {
+          "name": "x-content-type-options",
+          "value": "nosniff"
+        },
+        {
+          "name": "x-robots-tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "name": "report-to",
+          "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Pgpfplevy5k86IWKI6k4O0vXzN6c8cameeGLslsMLdur%2BhezKmZYlAYI93kK1f58A059uQ%2Fpf3OfTY5p%2BO%2FNbvXaN1zU2BqXqHwhT4zMkNRo79RUkkeD6RCnaD7h%2ByaGbHg%3D\"}]}"
+        },
+        {
+          "name": "nel",
+          "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+        },
+        {
+          "name": "server",
+          "value": "cloudflare"
+        },
+        {
+          "name": "cf-ray",
+          "value": "a5604f1da9742665-MEL"
+        },
+        {
+          "name": "alt-svc",
+          "value": "h3=\":443\"; ma=86400"
+        },
+        {
+          "name": "Content-Range",
+          "value": "bytes 0-1132088/1132089"
+        },
+        {
+          "name": "Content-Length",
+          "value": "1132089"
+        }
+      ],
+      "statusCode": 206,
+      "statusLine": "HTTP/1.1 206",
+      "tabId": 1786714585,
+      "timeStamp": 1793928376033.663,
+      "type": "media",
+      "url": "https://files.jarrel.io/0c7e1906-eb9d-4b27-a31b-1bd425a1562e/big-test.mp4"
+    },
+    "requestHeaders": [
+      {
+        "name": "sec-ch-ua-platform",
+        "value": "\"Linux\""
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+      },
+      {
+        "name": "sec-ch-ua",
+        "value": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\""
+      },
+      {
+        "name": "Range",
+        "value": "bytes=0-"
+      },
+      {
+        "name": "sec-ch-ua-mobile",
+        "value": "?0"
+      },
+      {
+        "name": "Accept",
+        "value": "*/*"
+      },
+      {
+        "name": "Sec-Fetch-Site",
+        "value": "same-origin"
+      },
+      {
+        "name": "Sec-Fetch-Mode",
+        "value": "no-cors"
+      },
+      {
+        "name": "Sec-Fetch-Dest",
+        "value": "video"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "identity"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "en-GB,en-US;q=0.9,en;q=0.8"
+      }
+    ]
+  },
+  "smallMp4": {
+    "response": {
+      "documentId": "51E24212D3540EDB13DD11AD2D0E95B8",
+      "documentLifecycle": "active",
+      "frameId": 0,
+      "frameType": "outermost_frame",
+      "fromCache": false,
+      "initiator": "https://files.jarrel.io",
+      "ip": "104.21.85.38",
+      "method": "GET",
+      "parentFrameId": -1,
+      "requestId": "12",
+      "responseHeaders": [
+        {
+          "name": "date",
+          "value": "Fri, 06 Nov 2026 01:26:16 GMT"
+        },
+        {
+          "name": "content-type",
+          "value": "video/mp4"
+        },
+        {
+          "name": "accept-ranges",
+          "value": "bytes"
+        },
+        {
+          "name": "cache-control",
+          "value": "no-cache"
+        },
+        {
+          "name": "content-disposition",
+          "value": "inline; filename=\"small-test.mp4\""
+        },
+        {
+          "name": "etag",
+          "value": "\"e98fce3ad741535f64f2b03bea648b97\""
+        },
+        {
+          "name": "last-modified",
+          "value": "Fri, 06 Nov 2026 01:18:53 GMT"
+        },
+        {
+          "name": "referrer-policy",
+          "value": "no-referrer"
+        },
+        {
+          "name": "x-content-type-options",
+          "value": "nosniff"
+        },
+        {
+          "name": "x-robots-tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "name": "report-to",
+          "value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=peHBU6wJG0myXH2PcLhcU00Z7BJG9NbDR66Z02QBd7p7bNxD5sGZIkMOpaTLwykVIKT9C86YwV5nyoGFJF7XEhknJ9nvm0Nb5DQlnklQX4WYk%2BDY2oDFwd3UP64oVbx%2BwMA%3D\"}]}"
+        },
+        {
+          "name": "nel",
+          "value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+        },
+        {
+          "name": "server",
+          "value": "cloudflare"
+        },
+        {
+          "name": "cf-ray",
+          "value": "a5604f1da98f2665-MEL"
+        },
+        {
+          "name": "alt-svc",
+          "value": "h3=\":443\"; ma=86400"
+        },
+        {
+          "name": "Content-Range",
+          "value": "bytes 0-6340/6341"
+        },
+        {
+          "name": "Content-Length",
+          "value": "6341"
+        }
+      ],
+      "statusCode": 206,
+      "statusLine": "HTTP/1.1 206",
+      "tabId": 1786714585,
+      "timeStamp": 1793928376112.33,
+      "type": "media",
+      "url": "https://files.jarrel.io/84377302-6937-493b-bdd3-57c03ffe4356/small-test.mp4"
+    },
+    "requestHeaders": [
+      {
+        "name": "sec-ch-ua-platform",
+        "value": "\"Linux\""
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+      },
+      {
+        "name": "sec-ch-ua",
+        "value": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\""
+      },
+      {
+        "name": "Range",
+        "value": "bytes=0-"
+      },
+      {
+        "name": "sec-ch-ua-mobile",
+        "value": "?0"
+      },
+      {
+        "name": "Accept",
+        "value": "*/*"
+      },
+      {
+        "name": "Sec-Fetch-Site",
+        "value": "same-origin"
+      },
+      {
+        "name": "Sec-Fetch-Mode",
+        "value": "no-cors"
+      },
+      {
+        "name": "Sec-Fetch-Dest",
+        "value": "video"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "identity"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "en-GB,en-US;q=0.9,en;q=0.8"
+      }
+    ]
+  },
+  "protectedMp4": {
+    "response": {
+      "documentId": "744EB4EFE2E2B2949B28DA4A4CE5B9D9",
+      "documentLifecycle": "active",
+      "frameId": 0,
+      "frameType": "outermost_frame",
+      "fromCache": false,
+      "initiator": "http://lvh.me:8765",
+      "ip": "127.0.0.1",
+      "method": "GET",
+      "parentFrameId": -1,
+      "requestId": "20",
+      "responseHeaders": [
+        {
+          "name": "Server",
+          "value": "BaseHTTP Python/3.15.0"
+        },
+        {
+          "name": "Date",
+          "value": "Fri, 06 Nov 2026 01:26:24 GMT"
+        },
+        {
+          "name": "Content-Type",
+          "value": "video/mp4"
+        },
+        {
+          "name": "Content-Length",
+          "value": "1132089"
+        }
+      ],
+      "statusCode": 200,
+      "statusLine": "HTTP/1.0 200 OK",
+      "tabId": 1786714586,
+      "timeStamp": 1793928384190.935,
+      "type": "media",
+      "url": "http://lvh.me:8765/protected/clip.mp4"
+    },
+    "requestHeaders": [
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+      },
+      {
+        "name": "Range",
+        "value": "bytes=0-"
+      },
+      {
+        "name": "Accept",
+        "value": "*/*"
+      },
+      {
+        "name": "Referer",
+        "value": "http://lvh.me:8765/"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "identity"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "en-GB,en-US;q=0.9,en;q=0.8"
+      },
+      {
+        "name": "Cookie",
+        "value": "vg_session=let-me-in"
+      }
+    ]
+  }
+}

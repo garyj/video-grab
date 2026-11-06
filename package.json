@@ -1,0 +1,18 @@
+{
+  "name": "video-grab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chrome extension that lists the videos a tab loads and copies their URLs for yt-dlp",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "check": "tsc",
+    "test": "node --test test/*.test.ts"
+  },
+  "packageManager": "pnpm@12.18.0",
+  "devDependencies": {
+    "@types/chrome": "^0.3.7",
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}

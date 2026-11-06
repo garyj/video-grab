@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>video-grab</title>
+    <style>
+      body {
+        width: 360px;
+        margin: 0;
+        font: 13px system-ui, sans-serif;
+      }
+      #empty {
+        padding: 12px;
+        color: #666;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        padding: 8px 12px;
+        border-bottom: 1px solid #ddd;
+      }
+      .name {
+        font-weight: 600;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .details {
+        color: #666;
+        margin: 2px 0 6px;
+      }
+      button {
+        margin-right: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="empty">No videos found on this tab.</p>
+    <ul id="videos"></ul>
+    <script type="module" src="dist/popup.js"></script>
+  </body>
+</html>
