@@ -1,6 +1,6 @@
 # video-grab
 
-A Chrome extension that lists the videos a tab loads, so you can copy their URLs into [yt-dlp](https://github.com/yt-dlp/yt-dlp). It downloads nothing itself. It sends no analytics and makes no network calls of its own.
+A Chrome extension that lists the videos a tab loads, so you can copy their URLs into [yt-dlp](https://github.com/yt-dlp/yt-dlp). It downloads nothing itself, and it never phones home.
 
 - The toolbar badge shows how many videos the current tab has loaded.
 - The popup lists each video with its name, format, and size.
@@ -8,6 +8,16 @@ A Chrome extension that lists the videos a tab loads, so you can copy their URLs
 - **Copy yt-dlp command** copies a `yt-dlp` command that sends the same request headers the browser sent. Use it for sites that refuse a bare URL.
 
 Download only videos you have the right to download.
+
+## It never phones home
+
+video-grab is free, open source, and independent. It has no analytics, no telemetry, no ads, no account, and no server. The extension never makes a network request of its own. It only watches the requests that the pages you visit already make. What it records stays in Chrome's session storage on your computer.
+
+To check this yourself:
+
+- Run `grep -rnE 'fetch\(|XMLHttpRequest|WebSocket|sendBeacon' src/`. It prints nothing.
+- Read `manifest.json`. It loads only the files in this repo.
+- Manifest V3 does not let an extension run code that it downloads. The code in `src/`, compiled into `dist/`, is all the code that runs.
 
 ## Install from source
 
