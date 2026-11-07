@@ -55,7 +55,8 @@ yt-dlp warns that passing cookies as a header is deprecated. It still sends them
 The service worker in `src/background.ts` watches every network response with `chrome.webRequest`. For each response, `detectVideo()` in `src/detect.ts` checks these rules:
 
 - The request came from a web page (`http` or `https` initiator), and the status is 200 to 300.
-- The `Content-Type` maps to a video format. If the type is missing or generic, such as `application/octet-stream`, the file extension decides.
+- The `Content-Type` maps to a video format. If the type is generic, such as `application/octet-stream`, the file extension decides.
+- If the `Content-Type` header is missing, only three cases count: a media request for an `.mp4` or a `.webm` file, and an XMLHttpRequest for an `.m3u8` file.
 - The format is a video format, such as MP4, WebM, MKV, or an HLS playlist (`.m3u8`). The full list is `VIDEO_FORMATS` in `src/detect.ts`.
 - The file is at least 300 KB. HLS playlists have no minimum size.
 - The host is not one of four ad and cam-site CDNs.
