@@ -15,9 +15,8 @@ video-grab is free, open source, and independent. It has no analytics, no teleme
 
 To check this yourself:
 
-- Run `grep -rnE 'fetch\(|XMLHttpRequest|WebSocket|sendBeacon' src/`. It prints nothing.
-- Read `manifest.json`. It loads only the files in this repo.
-- Manifest V3 does not let an extension run code that it downloads. The code in `src/`, compiled into `dist/`, is all the code that runs.
+- Run `grep -rnE 'fetch\(|XMLHttpRequest|WebSocket|sendBeacon|https?://' src/ popup.html manifest.json`. It prints nothing, because the code has no network calls and no web addresses.
+- Read `manifest.json` and `popup.html`. They load only files from `dist/`, which `make build` compiles from `src/`.
 
 ## Install from source
 
