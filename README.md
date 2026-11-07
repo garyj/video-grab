@@ -91,3 +91,7 @@ Chrome runs the compiled files in `dist/`, so run `make build` and reload the ex
 ## Credits
 
 The detection rules reimplement those of the Video Downloader - MPMux extension, version 1.2. video-grab is not affiliated with MPMux and contains none of its code.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
