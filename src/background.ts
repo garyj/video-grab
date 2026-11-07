@@ -8,7 +8,7 @@ const filter: chrome.webRequest.RequestFilter = {
   types: ["media", "xmlhttprequest", "object", "other"],
 };
 
-/** Request headers by request ID, held until the response arrives. */
+/** Request headers by request ID, held until the response arrives or the request fails. */
 const sentHeaders = new Map<string, chrome.webRequest.HttpHeader[]>();
 
 // Cookie and Referer are only visible with "extraHeaders".
@@ -30,6 +30,10 @@ chrome.webRequest.onResponseStarted.addListener(
   filter,
   ["responseHeaders"],
 );
+
+chrome.webRequest.onErrorOccurred.addListener((details) => {
+  sentHeaders.delete(details.requestId);
+}, filter);
 
 chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
   if (changeInfo.status === "loading" && changeInfo.url) {
