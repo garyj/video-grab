@@ -11,22 +11,21 @@ Download only videos you have the right to download.
 
 ## Install from source
 
-video-grab is not in the Chrome Web Store. To use it, build it and load it as an unpacked extension. You need [Node.js](https://nodejs.org/) 24 and [pnpm](https://pnpm.io/).
+video-grab is not in the Chrome Web Store. To use it, build it and load it as an unpacked extension. You need [Node.js](https://nodejs.org/) 24, [pnpm](https://pnpm.io/), and `make`.
 
-1. Clone the repo, install the dependencies, and build:
+1. Clone the repo, then install the dependencies and build:
 
    ```sh
    git clone https://github.com/garyj/video-grab.git
    cd video-grab
-   pnpm install
-   pnpm build
+   make build
    ```
 
 2. Open `chrome://extensions` and turn on **Developer mode**.
 3. Click **Load unpacked** and select the `video-grab` folder, the one that holds `manifest.json`.
 4. Pin video-grab to the toolbar from the puzzle-piece menu.
 
-To update, run `git pull` and `pnpm build`, then click the reload icon on the video-grab card in `chrome://extensions`.
+To update, run `git pull` and `make build`, then click the reload icon on the video-grab card in `chrome://extensions`.
 
 ## Use it
 
@@ -46,7 +45,7 @@ Some video servers refuse requests that lack the page's `Referer` or a session c
 
 The copied command can include the `Cookie` header, which logs you in to that site. Treat it like a password. Do not paste it into a chat, an issue, or a shared terminal log.
 
-The headers stay in Chrome's session storage on your computer. They are deleted when the tab closes or loads a new page, and when Chrome restarts.
+The headers stay in Chrome's session storage on your computer. They are deleted when the tab closes, when the tab moves to a different URL, and when Chrome restarts. A reload of the same URL keeps them.
 
 yt-dlp warns that passing cookies as a header is deprecated. It still sends them, scoped to the video's domain. It does not send them to `localhost`.
 
@@ -61,7 +60,7 @@ The service worker in `src/background.ts` watches every network response with `c
 - The file is at least 300 KB. HLS playlists have no minimum size.
 - The host is not one of four ad and cam-site CDNs.
 
-The service worker keeps one list per tab in `chrome.storage.session`. Chrome stops an idle service worker, and session storage survives that, while in-memory variables do not. A URL that matches an earlier one up to the `?` counts as the same video. Each tab keeps at most 30 videos.
+The service worker keeps one list per tab in `chrome.storage.session`. Chrome stops an idle service worker, and session storage survives that, while in-memory variables do not. A URL that matches an earlier one up to the `?` counts as the same video. Each tab keeps at most 30 videos. The list clears when the tab moves to a different URL or closes. A reload keeps the list.
 
 ## What it does not find
 
@@ -80,12 +79,12 @@ The service worker keeps one list per tab in `chrome.storage.session`. Chrome st
 ## Develop
 
 ```sh
-pnpm build   # compile src/ into dist/
-pnpm check   # type-check src/ and test/
-pnpm test    # run the tests with Node's built-in test runner
+make build   # install the dependencies, then compile src/ into dist/
+make check   # type-check src/ and test/, then run the tests
+make clean   # delete dist/
 ```
 
-Chrome runs the compiled files in `dist/`, so run `pnpm build` and reload the extension after each change.
+Chrome runs the compiled files in `dist/`, so run `make build` and reload the extension after each change.
 
 `test/fixtures/requests.json` holds real `webRequest` details. They were recorded from Chromium with this extension loaded, on a test page with ffmpeg-made videos and on a local server that refuses the video without its `Referer` and cookie.
 
